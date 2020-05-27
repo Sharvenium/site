@@ -1,0 +1,14 @@
+.nav-bar {
+  color: orange;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: auto;
+  top: 0px;
+}
+ul {
+  color:orange;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
