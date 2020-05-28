@@ -1,14 +1,57 @@
-.nav-bar {
-  color: orange;
+body{
+  font-family: "Inter", Arial, Georgia;
+}
+p {
+  font-size: 16px;
+}
+.about {
+  display: block;
   font-size: 20px;
   font-weight: bolder;
-  margin: auto;
-  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
 }
-ul {
-  color:orange;
+a {
+  color: orange;
+  font-weight: bold;
   text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: orange;
+  border-radius: 3px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: orange;
+}
+header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.links li {
+  float: left;
+}
+.links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.links li a:hover {
+  background-color: #111;
+}
+.intro {
+  padding-top:90px;
+  color: orange;
+  float: right;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+
 }
