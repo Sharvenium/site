@@ -1,1 +1,1 @@
-document.getElementById("test").innerHTML = 5 + 6;
+document.getElementById("test")window.alert(5+6);
