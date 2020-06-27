@@ -1,28 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Sharvenium's Blog</title>
-    <script src="myScript.js"></script> 
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Avenir Next, Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 22%;
+      padding: 0 10px;
+      margin-top: 50px;
+      margin-left: 125px;
+    }
+
+
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 75px;
+      padding-bottom: 75px;
+      text-align: center;
+      background-color: #F1F1F1;
+      border-style: solid;
+      border-radius: 10px;
+      border-width:1px;
+      border-color:#D3D3D3;
+    }
+
+    .card-text {
+      margin-top: 15px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    </style>
   </head>
   <body>
     <header>
-      <ul>
-        <div>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blogs</a></li>
-          <li><a href="book.html">Book Notes</a></li>
-          <li><a href="now.html">Now</a></li>
+        <div class="header">
+          <a href="#default" class="logo" > Sharvenium </a>
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blogs</a>
+          <a href="book.html">Book Notes</a>
+          <a href="now.html">Now</a>
         </div>
-      </ul>
     </header>
-    <img style="max-height:350px; max-width:350px;"src='file:///H:/Sharvenium.github.io/portrait.jpg' alt="Animoji of me. Yes I am an Apple Fanboy.">
+    <img class="homepage-image"style="max-height:350px; max-width:350px;"
+    src='/portrait.jpg'
+    alt="Animoji of me. Yes I am an Apple Fanboy.">
+
     <h1 class="intro">
       Hey, I am Sharvenium.<br> Writer, Coder, Student.
     </h1>
     <hr>
-    <p class="hometext">Welcome to my personal site where you can find all my <a href="https://www.sharvenium.com" target="_blank">blogs</a> and <a href=book.html>book notes</a>.<br> You can also find all my projects and social links below.</p>
+    <p class="homepage-para">
+      Welcome to my personal site where you can find all my <a href="https://www.sharvenium.com" target="_blank">blogs</a>
+     and <a href=book.html>book notes</a>.<br> You can also find all my projects and social links below.</p>
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/BrainIcon.png" style="width:80px;">
+        <p class="card-text">A collection of notes from all the books I have ever read in my life.
+           100 books and counting...</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/PencilHolderIcon.png" style="width:80px;">
+        <p class="card-text">On this site, I write blog posts about thoughts and insights that
+          I stumble across on the internet.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/CodingIcon.png" style="width:80px;">
+        <p class="card-text">Programming since 2014. <br>
+HTML, CSS, Javascript, Python, Scratch. </p>
+      </div>
+    </div>
+</div>
+<h1> Contact Me </h1>
+<p> find me on twitter @sharvenium </p>
   </body>
 </html>
