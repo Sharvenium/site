@@ -1,4 +1,7 @@
 /* Text Formatting */
+html {
+background-color: #F2F2F2;
+}
 p {
   font-size: 16px;
   font-family: Avenir Next, ,Arial;
@@ -42,31 +45,32 @@ border:none;
 }
  /* Index.html/ Homepage */
 
- .intro {
-   padding-top:80px;
-   color: #FFAB56;
-   float: right;
-   padding-left: 20px;
-   padding-right: 20px;
-   width: 60%;
- }
-.homepage-para {
-text-align: center;
-font-size: 20px;
-}
-
-.homepage-image {
-  margin-left: 150px;
-  margin-top: 36px;
-}
-
-
-.center {
-  display: block;
+ .intro { 
+  color: #FFAB56;
+  font-size: 40px;
+  text-align: center;
   margin-left: auto;
+  padding-left: 100px;
   margin-right: auto;
-  width: 50%;
 }
+
+ .homepage-image {
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.homepage-para { 
+  text-align: center;
+  font-size: 20px;
+  }
+
+  .homepage-box { 
+    display: flex;
+  }
+  
+
+
+
  /* Header */
 
  body {
@@ -110,15 +114,18 @@ font-size: 20px;
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .header a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
   .header-right {
     float: none;
   }
+}
+
+
 
  /* About Page f*/
 

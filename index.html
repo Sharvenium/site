@@ -17,10 +17,9 @@
     /* Float four columns side by side */
     .column {
       float: left;
-      width: 22%;
+      width: 25%;
       padding: 0 10px;
       margin-top: 50px;
-      margin-left: 125px;
     }
 
 
@@ -34,26 +33,29 @@
     /* Remove extra left and right margins, due to padding */
     .row {margin: 0 -5px;}
 
-    /* Responsive columns */
-    @media screen and (max-width: 600px) {
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 800px) {
       .column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
+        float: left;
       }
     }
 
     /* Style the counter cards */
     .card {
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      padding: 75px;
+      padding: 25px;
       padding-bottom: 75px;
+      padding-top: 75px;
       text-align: center;
-      background-color: #F1F1F1;
+      background-color: #FFFFFF;
       border-style: solid;
       border-radius: 10px;
       border-width:1px;
       border-color:#D3D3D3;
+
     }
 
     .card-text {
@@ -74,42 +76,49 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
           <a href="now.html">Now</a>
         </div>
     </header>
-    <img class="homepage-image"style="max-height:350px; max-width:350px;"
-    src='images/portrait.png'
-    alt="Animoji of me. Yes I am an Apple Fanboy.">
+    <div class="homepage-box">
+      <img class="homepage-image" src='images/Sharvenium Profile Pic.png' style="height:350px;">
 
-    <h1 class="intro">
-      Hey, I am Sharvenium.<br> Writer, Coder, Student.
-    </h1>
-    <hr>
+      <h1 class="intro">
+      Hey, I am Sharvenium. <br> Writer, Coder, Student.
+      </h1>
+      <hr>
+    </div>
     <p class="homepage-para">
       Welcome to my personal site where you can find all my <a href="https://www.sharvenium.com" target="_blank">blogs</a>
      and <a href=book.html>book notes</a>.<br> You can also find all my projects and social links below.</p>
-
 
 
 <div class="row">
     <div class="column">
       <div class="card">
         <img src="images/BrainIcon.png" style="width:80px;">
-        <p class="card-text">A collection of notes from all the books I have ever read in my life.
-           100 books and counting...</p>
+        <p class="card-text">A collection of notes from all the books I have ever read. 100+ books so far...
+        </p>
       </div>
     </div>
 
     <div class="column">
       <div class="card">
         <img src="images/PencilHolderIcon.png" style="width:80px;">
-        <p class="card-text">On this site, I write blog posts about thoughts and insights that
-          I stumble across on the internet.</p>
+        <p class="card-text">On this site, I write articles about insights that I stumble across on the internet.
+        </p>
       </div>
     </div>
 
     <div class="column">
       <div class="card">
         <img src="images/CodingIcon.png" style="width:80px;">
-        <p class="card-text">Programming since 2014. <br>
-HTML, CSS, Javascript, Python, Scratch. </p>
+        <p class="card-text">Programming since 2014. 
+          HTML, CSS, Javascript, Python, Scratch. Projects at GitHub.
+          </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="images/Youtube.png" style="width:80px;">
+        <p class="card-text"> I create YouTube videos once a week about tech, books I read and other cool nerdy stuff. 
+        </p>
       </div>
     </div>
 </div>

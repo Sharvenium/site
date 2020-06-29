@@ -1,0 +1,37 @@
+<html>
+<style>
+    .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  flex: 1;
+}
+
+.element {
+  flex: 1;
+}
+
+/* is the same as */
+
+.element {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+/* flex shorthand */
+.element {
+  flex: flex-grow flex-shrink flex-basis;
+}
+
+</style>
+<body>
+    <section class="flex-container">
+        <div>div</div>
+        <div>div</div>
+        ...
+      </section>
+</body>
+</html>
