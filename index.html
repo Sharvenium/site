@@ -36,10 +36,11 @@
     /* Responsive columns - one column layout (vertical) on small screens */
     @media screen and (max-width: 800px) {
       .column {
-        width: 100%;
         display: block;
         margin-bottom: 20px;
-        float: left;
+        margin-right: 5%;
+        margin-left:5%;
+        width:90%;
       }
     }
 
@@ -62,6 +63,7 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       margin-top: 15px;
       margin-left: 0px;
       margin-right: 0px;
+      font-size: 18px;
     }
     </style>
   </head>
@@ -87,13 +89,13 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     <p class="homepage-para">
       Welcome to my personal site where you can find all my <a href="https://www.sharvenium.com" target="_blank">blogs</a>
      and <a href=book.html>book notes</a>.<br> You can also find all my projects and social links below.</p>
-
+      <h2 style="text-align: center;">Projects</h2>
 
 <div class="row">
     <div class="column">
       <div class="card">
         <img src="images/BrainIcon.png" style="width:80px;">
-        <p class="card-text">A collection of notes from all the books I have ever read. 100+ books so far...
+        <p class="card-text" style="padding-bottom: 15px;">A collection of notes from all the books I have ever read. 100+ books so far...
         </p>
       </div>
     </div>
@@ -101,7 +103,7 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     <div class="column">
       <div class="card">
         <img src="images/PencilHolderIcon.png" style="width:80px;">
-        <p class="card-text">On this site, I write articles about insights that I stumble across on the internet.
+        <p class="card-text" style="padding-bottom: 15px;">On this site, I write articles about insights that I stumble across on the internet.
         </p>
       </div>
     </div>
@@ -109,20 +111,42 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     <div class="column">
       <div class="card">
         <img src="images/CodingIcon.png" style="width:80px;">
-        <p class="card-text">Programming since 2014. 
-          HTML, CSS, Javascript, Python, Scratch. Projects at GitHub.
+        <p class="card-text">Programming in some form since 2014. 
+          Learning HTML, CSS, Swift, Python and Javascript.
           </p>
       </div>
     </div>
     <div class="column">
       <div class="card">
         <img src="images/Youtube.png" style="width:80px;">
-        <p class="card-text"> I create YouTube videos once a week about tech, books I read and other cool nerdy stuff. 
+        <p class="card-text"> I create YouTube videos once a week about tech, books and other cool nerdy stuff. 
         </p>
       </div>
     </div>
 </div>
-<h1> Contact Me </h1>
-<p> find me on twitter @sharvenium </p>
+<h2 style="text-align: center;"> Contact Me </h2>
+<p class="homepage-para"> Email me at sharvenium@gmail.com <br>or find me on the internet below</p>
+<div class="social-links">
+<a href="https://www.sharvenium.com">
+  <img target="_blank" alt="Email" src="images/email.png"
+  width="70px" height="70px" style="margin-left:auto;" class="social-icons">
+</a>
+<a target="_blank" href="https://www.twitter.com/sharvenium">
+  <img alt="Email" src="images/Twitter.png"
+  width="70px" height="70px" style="" class="social-icons"> 
+</a>
+<a target="_blank" href="https://www.youtube.com/channel/UC-rurif7Y01qNfH2-5N7ZzQ">
+  <img alt="Email" src="images/Youtubeiconn.png"
+  width="70px" height="70px" class="social-icons">
+</a>
+<a target="_blank" href="https://www.GitHub.com/sharvenium">
+  <img alt="Email" src="images/GitHub.png"
+  width="70px" height="70px" style="" class="social-icons">
+</a>
+  <a target="_blank" href="https://www.goodreads.com/user/show/68169706-sharvenium">
+  <img alt="Email" src="images/bookicon.png"
+  width="70px" height="70px" style="" class="social-icons">
+</a>
+</div>
   </body>
 </html>
